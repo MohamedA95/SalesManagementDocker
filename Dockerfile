@@ -10,5 +10,7 @@ RUN pip3 install --upgrade pip
 RUN git clone https://github.com/habi3000/salesManagement.git
 RUN pip3 install -r salesManagement/requirements.txt
 EXPOSE 8000
+RUN pwd
+RUN ls
 RUN chmod +x ./start.sh
 CMD ["./start.sh"]
